@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Box Shadow Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Box Shadow</h1>
+        <div class="card">
+            <div class="preview">
+                <div class="square-preview">
+
+                </div>
+            </div>
+            <div class="configs">
+                <div class="offset-cg">
+                    <div class="x">
+                        <label for="x-offset-input" id="x-input-lbl">X-Offset</label>
+                        <input type="range" class="x-offset" max="50" min="-50" id="x-offset-input"value="10">
+                    </div>
+                    <div class="y">
+                        <label for="y-offset-input" id="y-input-lbl">Y-Offset</label>
+                        <input type="range" class="y-offset" max="50" min="-50" id="y-offset-input" value="10">
+                    </div>
+                </div>
+                <div class="radius-cg">
+                    <div class="spread-cg">
+                        <label for="spread-input" id="spread-input-lbl">Spread Radius</label>
+                        <input type="range" max="50" min="-50" id="spread-input" class="spread" value="2">
+                    </div>
+                    <div class="blur-cg">
+                        <label for="blur-input" id="blur-input-lbl">Blur Radius</label>
+                        <input type="range" max="50" min="-50" id="blur-input" class="blur" value="2">
+                    </div>
+                </div>
+                <div class="color-cg">
+                    <h2>Color</h2>
+                    <input type="color" name="sdw-color" class="shadow-color">
+                </div>
+            </div>
+        </div>
+
+        <div class="code-result">
+            <div class="clipboard"><i class="fa-regular fa-clipboard"></i></div>
+            <span class="line-n">1.</span><span class="keyword">box-shadow</span> : <span class="value-code">5px 5px 2px 2px #000</span>;
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

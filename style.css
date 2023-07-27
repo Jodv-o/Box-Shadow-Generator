@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(18,167,194,1) 10%, rgba(0,68,121,1) 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container h1{
+    color: #fff;
+    display: inline;
+    position: relative;
+    left: 32%;
+    top: -5px;
+    font-size: 50px;
+}
+
+.card{
+    background: #c1f6ff;
+    width: 800px;
+    height: 525px;
+    border-radius: 20px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.square-preview{
+    background: #fff;
+    width: 230px;
+    height: 230px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 2px 2px #ccc;
+}
+
+.configs{
+    background: #5ea9b6;
+    height: 225px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    transform: translateY(18%);
+    display: grid;
+    grid-template: 
+        "offsets radius color-i"
+        "offsets radius color-i"
+    ;
+}
+
+.configs h2{
+    color: #fff;
+    font-size: 28px;
+    margin: 5px;
+    position: relative;
+    left: 5px;
+}
+
+.configs label{
+    font-weight: 900;
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.configs input[type=range]{
+    width:75%;
+    opacity: 0.9;
+    background: #fff;
+}
+
+.configs input[type=range]:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.configs input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    transform: scale(1.7);
+    cursor: grab;
+    border-radius: 50%;
+    background: url(https://www.flaticon.com/svg/vstatic/svg/59/59089.svg?token=exp=1614064733~hmac=a6f0cce2214fdb52e7df9eec24006427) #75b4c3;
+}
+
+.configs input[type=range]::-moz-range-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    transform: scale(1.7);
+    cursor: grab;
+    border-radius: 50%;
+    background: url(https://www.flaticon.com/svg/vstatic/svg/59/59089.svg?token=exp=1614064733~hmac=a6f0cce2214fdb52e7df9eec24006427) #75b4c3;
+}
+
+.shadow-color{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100px;
+    height: 100px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.shadow-color::-webkit-color-swatch{
+    border-radius: 10px;
+    border: none;
+}
+
+.offset-cg{
+    grid-area: offsets;
+    padding: 20px;
+}
+
+.x, .y, .spread-cg, .blur-cg{
+    display: flex;
+    flex-direction: column;
+}
+
+.x, .spread-cg{
+    margin-bottom: 50px;
+}
+
+.radius-cg{
+    grid-area: radius;
+    padding: 20px;
+}
+
+.color-cg{
+    grid-area: color-i;
+    padding: 20px;
+    transform: translate(10%);
+}
+
+.code-result{
+    background: #03062b;
+    margin: 20px;
+    padding-left: 20px;
+    border-top: 25px solid #24283a;
+    height: 80px;
+    width: 800px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    color: #f2f2f2;
+}
+
+.clipboard{
+    position: absolute;
+    top: 37.8125rem;
+    left: 77vw;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: .5s all ease;
+}
+
+.clipboard:hover{
+    opacity: 1;
+}
+
+.line-n{
+    color: #bbbbbb;
+    opacity: 0.8;
+}
+
+.keyword {
+    color: #00caff;
+}
+
+.value-code {
+    color: #f08d49;
+}
